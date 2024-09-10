@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Search and Favorite</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Search and Favourite</h1>
+            <h5>You can search for Countries, Indian states and Bihar districts</h5>
+        </div>
+        <div class="box">
+            <div class="suggest">
+                <h2>Search</h2>
+                <input type="text" id="searchBox" placeholder="Search for a country, Indian state, or Bihar district..." oninput="searchCountry()">
+                <div id="suggestions"></div>
+            </div>
+            <div id="countryInfo">
+                <div id="countryCode"></div>
+                <button id="favoriteBtn" onclick="addFavorite()">Add to Favourite</button>
+                <div id="map"></div>
+            </div>
+            <div class="fav">
+                <h2>Favourites</h2>
+            <ul id="favoriteList"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

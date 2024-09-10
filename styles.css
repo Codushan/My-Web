@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(0deg, #522db8 0%, #1c7ce0 100%);
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.title{
+    padding-top: 30px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    height: 100%; /* Adjust this if needed */
+}
+
+.suggest {
+    flex: 1;
+    padding: 10px;
+}
+
+#countryInfo {
+    flex: 2;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#countryCode {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 10px;
+    border: 2px solid #000000;
+    border-radius: 25px;
+}
+
+#favoriteBtn , #searchBox{
+    padding: 10px 20px;
+    background-image: linear-gradient(to right, rgb(1 134 218), rgb(182 49 167));
+    border: 0;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+#favoriteBtn , #searchBox{
+    color: white;
+    border: 2px double transparent;
+    background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+
+.fav {
+    flex: 1;
+    padding: 10px;
+}
+
+#favoriteList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#favoriteList li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#suggestions {
+    text-align: left;
+    margin-bottom: 10px;
+    display: none; /* Initially hide suggestions */
+}
+
+#suggestions div {
+    padding: 5px;
+    cursor: pointer;
+}
+
+#suggestions div:hover {
+    background-color: #e0e0e000;
+    /* background-image: linear-gradient(to right, rgb(1 134 218), rgb(182 49 167)); */
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+.highlight {
+    /* background-color: #e0e0e0; */
+    background-color: #e0e0e000;
+    /* background-image: linear-gradient(to right, rgb(1 134 218), rgb(182 49 167)); */
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+.remove-btn {
+    color: red;
+    cursor: pointer;
+}
